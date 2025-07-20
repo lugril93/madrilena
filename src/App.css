@@ -3,7 +3,7 @@
 }
 
 .App-logo {
-  height: 80vmin;
+  height: 100vmin;
   pointer-events: none;
 }
 
@@ -34,7 +34,7 @@
 }
 
 .bienvenida {
-  font-size: 80px;
+  font-size: 100px;
   font-family: 'Pacifico', cursive;
   text-align: center;
   color: #ffffff;

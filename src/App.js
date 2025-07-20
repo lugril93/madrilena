@@ -1,12 +1,28 @@
 import logo from './assets/madrilenalogo.jpg';
 import './App.css';
+import Button from 'react-bootstrap/Button';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route
+} from 'react-router-dom';
+import Inicio from './Inicio';
+
 
 function App() {
   return (
+    <Router>
+    <Routes>
+    <Route path="/" element={
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <h1 className="bienvenida">Bienvenido</h1>
+              <Button variant="warning" size="lg" className="botonAcceder"
+              onClick={() =>{alert('Hiciste click');
+              window.location.href = '/inicio';}}
+              >Acceder</Button>
+              
         <a
           className="App-link"
           href="https://reactjs.org"
@@ -17,6 +33,10 @@ function App() {
         </a>
       </header>
     </div>
+ }  />
+        <Route path="/inicio" element={<Inicio />} />
+      </Routes>
+    </Router>
   );
 }
 
