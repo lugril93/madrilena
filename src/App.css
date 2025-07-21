@@ -3,7 +3,7 @@
 }
 
 .App-logo {
-  height: 100vmin;
+  height: 80vmin;
   pointer-events: none;
 }
 
@@ -38,4 +38,23 @@
   font-family: 'Pacifico', cursive;
   text-align: center;
   color: #ffffff;
+}
+
+.navbar-black {
+  background-color: #000 !important;
+}
+
+.navbar-tall {
+  height: 110px; /* puedes ajustar este valor */
+  display: flex;
+  align-items: center;
+}
+
+.navbar-collapse-fix {
+  margin-top: 110px; /* misma altura que la barra */
+  background-color: #000; /* mismo color de fondo que navbar */
+  padding: 1rem;
+  position: absolute;
+  width: 100%;
+  z-index: 1000;
 }
