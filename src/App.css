@@ -45,16 +45,43 @@
 }
 
 .navbar-tall {
-  height: 110px; /* puedes ajustar este valor */
+  height: 110px; 
   display: flex;
   align-items: center;
 }
 
 .navbar-collapse-fix {
-  margin-top: 110px; /* misma altura que la barra */
-  background-color: #000; /* mismo color de fondo que navbar */
+  margin-top: 110px; 
+  background-color: #000; 
   padding: 1rem;
   position: absolute;
   width: 100%;
   z-index: 1000;
 }
+
+.menu-page {
+  background-color: rgb(248, 176, 135);
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.inicio-page {
+  background-color: #111; 
+  min-height: 10vh;
+  margin: 0;
+  padding: 0;
+  color: white; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contacto-background {
+  background-color: #f5f5f5; 
+}
+
+.carousel-image {
+  height: 700px;
+  object-fit: cover;
+}
+

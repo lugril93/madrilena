@@ -7,6 +7,8 @@ import {
   Route
 } from 'react-router-dom';
 import Inicio from './Inicio';
+import Menu from './menu';
+import Contacto from './contacto';
 
 
 function App() {
@@ -35,6 +37,8 @@ function App() {
     </div>
  }  />
         <Route path="/inicio" element={<Inicio />} />
+        <Route path="/menu" element={<Menu/>}/>
+        <Route path="/contacto" element={<Contacto/>}/>
       </Routes>
     </Router>
   );
